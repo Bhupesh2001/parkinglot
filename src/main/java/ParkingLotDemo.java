@@ -1,11 +1,9 @@
-package org.lld;
-
-import org.lld.entities.ParkingFloor;
-import org.lld.entities.ParkingSpot;
-import org.lld.entities.ParkingTicket;
-import org.lld.strategy.fee.VehicleBasedFeeStrategy;
-import org.lld.strategy.payment.UPIStrategy;
-import org.lld.vehicle.*;
+import entities.ParkingFloor;
+import entities.ParkingSpot;
+import entities.ParkingTicket;
+import strategy.fee.VehicleBasedFeeStrategy;
+import strategy.payment.UPIStrategy;
+import vehicle.*;
 
 import java.util.Optional;
 

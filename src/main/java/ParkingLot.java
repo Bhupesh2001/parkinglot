@@ -1,24 +1,21 @@
-package org.lld;
-
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.lld.entities.ParkingFloor;
-import org.lld.entities.ParkingSpot;
-import org.lld.entities.ParkingTicket;
-import org.lld.strategy.fee.FeeStrategy;
-import org.lld.strategy.fee.FlatRateFeeStrategy;
-import org.lld.strategy.parking.BestFitStrategy;
-import org.lld.strategy.parking.ParkingStrategy;
-import org.lld.vehicle.Vehicle;
-import org.lld.strategy.payment.PaymentStrategy;
+import entities.ParkingFloor;
+import entities.ParkingSpot;
+import entities.ParkingTicket;
+import strategy.fee.FeeStrategy;
+import strategy.fee.FlatRateFeeStrategy;
+import strategy.parking.BestFitStrategy;
+import strategy.parking.ParkingStrategy;
+import vehicle.Vehicle;
+import strategy.payment.PaymentStrategy;
 
 public class ParkingLot {
-    private static ParkingLot instance;
+    private static final ParkingLot instance = new ParkingLot();
     private final List<ParkingFloor> floors = new ArrayList<>();
     private final Map<String, ParkingTicket> activeTickets;
     private FeeStrategy feeStrategy;
@@ -30,10 +27,8 @@ public class ParkingLot {
         this.activeTickets = new ConcurrentHashMap<>();
     }
 
-    public static synchronized ParkingLot getInstance() {
-        if (instance == null) {
-            instance = new ParkingLot();
-        }
+
+    public static ParkingLot getInstance() {
         return instance;
     }
 

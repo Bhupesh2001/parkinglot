@@ -1,4 +1,4 @@
-package org.lld.vehicle;
+package vehicle;
 
 public enum VehicleSize {
     SMALL,

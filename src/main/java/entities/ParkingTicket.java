@@ -1,6 +1,6 @@
-package org.lld.entities;
+package entities;
 
-import org.lld.vehicle.Vehicle;
+import vehicle.Vehicle;
 
 import java.util.Date;
 import java.util.UUID;

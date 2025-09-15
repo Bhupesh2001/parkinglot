@@ -1,13 +1,13 @@
-package org.lld.strategy.parking;
+package strategy.parking;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-import org.lld.entities.ParkingFloor;
-import org.lld.entities.ParkingSpot;
-import org.lld.vehicle.Vehicle;
+import entities.ParkingFloor;
+import entities.ParkingSpot;
+import vehicle.Vehicle;
 
 public class FarthestFirstStrategy implements ParkingStrategy {
     @Override

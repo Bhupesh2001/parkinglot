@@ -1,6 +1,6 @@
-package org.lld.strategy.fee;
+package strategy.fee;
 
-import org.lld.entities.ParkingTicket;
+import entities.ParkingTicket;
 
 public class FlatRateFeeStrategy implements FeeStrategy {
 

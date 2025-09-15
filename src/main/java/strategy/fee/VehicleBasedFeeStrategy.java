@@ -1,8 +1,8 @@
-package org.lld.strategy.fee;
+package strategy.fee;
 
 
-import org.lld.entities.ParkingTicket;
-import org.lld.vehicle.VehicleSize;
+import entities.ParkingTicket;
+import vehicle.VehicleSize;
 import java.util.Map;
 
 public class VehicleBasedFeeStrategy implements FeeStrategy {

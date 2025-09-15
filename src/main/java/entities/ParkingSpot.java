@@ -1,7 +1,7 @@
-package org.lld.entities;
+package entities;
 
-import org.lld.vehicle.Vehicle;
-import org.lld.vehicle.VehicleSize;
+import vehicle.Vehicle;
+import vehicle.VehicleSize;
 
 public class ParkingSpot {
     private final String spotId;
@@ -45,15 +45,10 @@ public class ParkingSpot {
     public boolean canFitVehicle(Vehicle vehicle) {
         if (isOccupied) return false;
 
-        switch (vehicle.getSize()) {
-            case SMALL:
-                return spotSize == VehicleSize.SMALL;
-            case MEDIUM:
-                return spotSize == VehicleSize.MEDIUM || spotSize == VehicleSize.LARGE;
-            case LARGE:
-                return spotSize == VehicleSize.LARGE;
-            default:
-                return false;
-        }
+        return switch (vehicle.getSize()) {
+            case SMALL -> spotSize == VehicleSize.SMALL;
+            case MEDIUM -> spotSize == VehicleSize.MEDIUM || spotSize == VehicleSize.LARGE;
+            case LARGE -> spotSize == VehicleSize.LARGE;
+        };
     }
 }

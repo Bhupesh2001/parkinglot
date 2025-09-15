@@ -1,5 +1,5 @@
-package org.lld.strategy.fee;
-import org.lld.entities.ParkingTicket;
+package strategy.fee;
+import entities.ParkingTicket;
 
 public interface FeeStrategy {
     double calculateFee(ParkingTicket parkingTicket);

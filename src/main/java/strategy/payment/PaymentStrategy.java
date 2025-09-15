@@ -1,4 +1,4 @@
-package org.lld.strategy.payment;
+package strategy.payment;
 
 public interface PaymentStrategy {
     /**

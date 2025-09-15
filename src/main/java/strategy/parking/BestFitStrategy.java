@@ -1,8 +1,8 @@
-package org.lld.strategy.parking;
+package strategy.parking;
 
-import org.lld.entities.ParkingFloor;
-import org.lld.entities.ParkingSpot;
-import org.lld.vehicle.Vehicle;
+import entities.ParkingFloor;
+import entities.ParkingSpot;
+import vehicle.Vehicle;
 
 import java.util.List;
 import java.util.Optional;

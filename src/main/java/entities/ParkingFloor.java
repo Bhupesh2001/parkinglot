@@ -1,7 +1,7 @@
-package org.lld.entities;
+package entities;
 
-import org.lld.vehicle.Vehicle;
-import org.lld.vehicle.VehicleSize;
+import vehicle.Vehicle;
+import vehicle.VehicleSize;
 
 import java.util.Comparator;
 import java.util.Map;

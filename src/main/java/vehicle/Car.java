@@ -1,4 +1,4 @@
-package org.lld.vehicle;
+package vehicle;
 
 public class Car extends Vehicle {
     public Car(String licenseNumber) {
